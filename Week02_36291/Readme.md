@@ -1,3 +1,4 @@
+# Latihan, Tugas, dan Eksperimen
 ## 2. Lakukan pengujian terhadap app anda dengan skenario di bawah ini:
 ### a. Kosongkan Angka 1 dan Angka 2, lalu klik salah satu button
 Muncul error dengan pesan "Week02_36291 keeps stopping", lalu aplikasi tertutup. (Muncul NumberFormatException: empty string pada logcat)
@@ -15,6 +16,21 @@ Ketika hal tersebut dilakukan, tidak terjadi error, tetapi hasil yang di-output 
 Hal tersebut dapat terjadi karena dalam operasi matematika, jika suatu bilangan dibagi dengan 0 hasilnya adalah tak hingga.
 
 ## 3. Debugging
+```java
+btnKali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hitung('*'); //breakpoint
+            }
+        });
+
+btnBagi.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        hitung('/'); //breakpoint
+    }
+});
+```
 Saya mengambil breakpoint pada saat btnKali dan btnBagi memanggil method 'hitung'
 Ketika debugging app dijalankan, aplikasi berhenti sesuai dengan breakpoint yang telah ditentukan.
 Pada kasus saya, aplikasi berhenti ketika button kali dan bagi ditekan. Setelah itu saya dapat memilih
