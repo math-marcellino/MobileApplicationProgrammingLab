@@ -55,7 +55,7 @@ public class DaftarKataAdapter extends RecyclerView.Adapter<DaftarKataAdapter.Ka
         public void onClick(View v) {
             int mPosition = getLayoutPosition();
             String element = mDaftarKata.get(mPosition);
-            mDaftarKata.set(mPosition, element + "pernah diklik");
+            mDaftarKata.set(mPosition, element + " pernah diklik");
             mAdapter.notifyDataSetChanged();
             Toast.makeText(v.getContext(), element + "dipilih", Toast.LENGTH_LONG).show();
         }
