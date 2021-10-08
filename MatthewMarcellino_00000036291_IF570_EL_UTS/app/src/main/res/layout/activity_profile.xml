@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        app:titleTextColor="@color/white"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/kim_jong_moon"
+        app:civ_border_color="#FFFF"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Matthew Marcellino"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00000036291\nIF570-EL"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:textSize="22sp"
+        android:text="REFERENSI :"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="20dp"
+        android:text="- Modul Lab week 1-7\n\n
+- https://mixkit.co/free-sound-effects\n\n
+- https://www.epidemicsound.com/\n\n
+- https://stackoverflow.com/questions/35648913/how-to-set-menu-to-toolbar-in-android/49098384\n\n
+- https://stackoverflow.com/questions/26651602/display-back-arrow-on-toolbar\n\n
+- https://github.com/hdodenhof/CircleImageView" />
+
+</LinearLayout>

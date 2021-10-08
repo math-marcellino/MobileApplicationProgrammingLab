@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/audio_logo"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:id="@+id/titleSFX"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/kategoriSFX"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="11sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/deleteSFX"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/delete_logo"/>
+</LinearLayout>
